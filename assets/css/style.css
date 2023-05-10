@@ -149,6 +149,8 @@ nav a,
     align-items: center;
 }
 
+
+
 /* Define configurações específicas da classe icone */
 .icone {
     width: 7rem;
@@ -350,3 +352,4 @@ de validação dos campos */
     font-size: 1rem;
     padding: 0.25rem 0;
 }
+
