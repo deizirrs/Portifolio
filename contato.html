@@ -1,19 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type = "image/pmg" href="assets/images/goku_ico.png">
+    <link rel="icon" type="image/png" href="assets/images/goku_ico.png">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Portifílio</title>
+    
+    <title>Portfólio</title>
 </head>
+
 <body>
 
     <nav>
         <div class="logo">
             <img class="icone" src="assets/images/goku_ico.png" alt="Logo">
-            <span class="titulo">Portfólio</span>
+            <span class="titulo">Portfólio do Goku</span>
         </div>
 
         <ul>
@@ -22,8 +25,9 @@
         </ul>
     </nav>
 
-    <main class="contato">
-        <section class="formulario">
+
+    <main id="contato">
+        <section id="formulario_mensagem">
             <h3>Contato</h2>
                 <form>
                     <div class="campos-form">
@@ -35,19 +39,19 @@
 
                     <div class="campos-form">
                         <label for="email">E-mail:</label>
-                        <input onkeyup="validarEmail2()" id="email" name="email" type="text"
+                        <input onkeyup="validarEmailRegEx()" id="email" name="email" type="text"
                             placeholder="Insira o seu e-mail">
                         <div id="txtEmail"></div>
                     </div>
 
                     <div class="campos-form">
                         <label for="mensagem">Mensagem:</label>
-                        <textarea onkeyup="validarMensagem()" id="mensagem" name="mensagem" rows="8"
+                        <textarea id="mensagem" name="mensagem" rows="8"
                             placeholder="Deixe sua mensagem..."></textarea>
                         <div id="txtMensagem"></div>
                     </div>
 
-                    <button type="button" onclick="enviarForm()">
+                    <button onclick="enviarFormulario()" type="button" >
                         Enviar
                     </button>
 
@@ -55,15 +59,15 @@
                 </form>
         </section>
 
-        <section>
+        <section id="formulario_buscacep">
             <h3>Consultar CEP</h3>
             <div class="endereco">
                 <div class="campos-form">
                     <label for="cep">CEP:</label>
-                    <input onkeyup="validarCep()" id="cep" name="cep" type="text" placeholder="Digite o número do CEP">
+                    <input id="cep" name="cep" type="text" placeholder="Digite o número do CEP">
                     <div id="txtCep"></div>
                 </div>
-                <button type="button" onclick="consultarCep()">
+                <button onclick="consultarCep()" type="button" >
                     Consultar
                 </button>
                 <hr>
@@ -78,19 +82,19 @@
 
     <footer>
         <div class="redes_sociais">
-            <a href="https://www.linkedin.com/in/deizianer/" target="_blank">
+            <a href="http://linkedin.com" target="_blank">
                 <img class="icons" src="assets/images/linkedin.png" alt="Linkedin">
             </a>
-            <a href="https://github.com/deizianer" target="_blank">
+            <a href="http://github.com" target="_blank">
                 <img class="icons" src="assets/images/github.png" alt="Github">
             </a>
-            <a href="https://www.instagram.com/Deizirs/" target="_blank">
+            <a href="http://instagram.com" target="_blank">
                 <img class="icons" src="assets/images/instagram.png" alt="Instagram">
             </a>
         </div>
         <p class="by">Desenvolvido por: Deiziane Rodrigues - 2023 &copy;</p>
     </footer>
-    <script src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
