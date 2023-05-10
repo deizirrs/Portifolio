@@ -52,10 +52,6 @@ function validarEmailRegEx() {
     emailOk = false;
   }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> js
 function enviarFormulario() {
   if (nomeOk === true && emailOk === true) {
     alert(nome.value + ", obrigado pela sua mensagem!");
