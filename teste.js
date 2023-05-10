@@ -22,7 +22,10 @@ function dividir (n1, n2){
     
 return n1/n2
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> js
 let resultado =dividir(10,5)
 console.log(resultado)
 
