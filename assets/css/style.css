@@ -5,10 +5,10 @@
 
 :root {
     /*Cores de Fundo (Background)*/
-    --background-page: #c5a1b7;
-    --background-nav: #c7759467;
-    --background-sobre: #8a6c1b;
-    --background-footer: #29282B;
+    --background-page: #07011b;
+    --background-nav: #000000;
+    --background-sobre: #790d0dea;
+    --background-footer: #000000;
 
     /* Cores das Fontes (texto) */
     --cor-fonte-padrao: #fcf9f9;
@@ -116,7 +116,7 @@ a:hover {
 /* Define configurações específicas para o elemento Nav (menu)*/
 nav {
     margin: 0 auto;
-    width: 80vw;
+    width: 100vw;
 
     /* Exibe os itens na tela no modo flex */
     display: flex;
@@ -143,10 +143,11 @@ nav a,
 /* Define configurações específicas a classe logo */
 .logo {
     display: flex;
-    width: 20%;
+    width: 100%;
     justify-content: left;
     gap: 0.5rem;
     align-items: center;
+    
 }
 
 /* Define configurações específicas da classe icone */
@@ -209,6 +210,7 @@ main {
     display: block;
     border-radius: 8px;
     margin-top: 2rem;
+    padding: 2.25rem 1.5rem;
 }
 
 /* Define configurações específicas do elemento footer */
@@ -350,3 +352,13 @@ de validação dos campos */
     font-size: 1rem;
     padding: 0.25rem 0;
 }
+@media(max-width: 1000px){
+
+    nav{
+        width: 100vw;
+        flex-direction: column;
+        row-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25rem;
+    }
