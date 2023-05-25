@@ -1,25 +1,11 @@
-﻿// Variáveis de Escopo Global
+// Variáveis de Escopo Global
 
 const nome = document.querySelector("#nome");
 const email = document.querySelector("#email");
 const cep = document.querySelector("#cep");
-const menuIcon = document.querySelector('.menu-icon');
-const menuItems = document.querySelector('.menu-items');
 
 let nomeOk = false;
 let emailOk = false;
-
-menuIcon.addEventListener('click', function() {
-  menuItems.classList.toggle('show');
-});
-
-menuIcon.addEventListener('mouseover', function() {
-  menuItems.classList.add('show');
-});
-
-menuIcon.addEventListener('mouseout', function() {
-  menuItems.classList.remove('show');
-});
 
 function validarNome() {
   //Variável de Escopo Local
